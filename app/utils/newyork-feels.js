@@ -1,6 +1,6 @@
-import Tone from 'tone';
+/* global Tone */
 
-export default function() {
+export default function newyorkFeels() {
   console.log("Hello World!");
 
   //create a synth and connect it to the master output (your speakers)
