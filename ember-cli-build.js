@@ -20,5 +20,7 @@ module.exports = function(defaults) {
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
   app.import('vendor/Tone.js');
+  app.import('vendor/Keyboard.js');
+  app.import('vendor/Interface.js');
   return app.toTree();
 };
