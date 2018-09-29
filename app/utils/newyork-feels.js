@@ -24,9 +24,9 @@ let motifOneB = [null, "A4", null, "A4", "A4", "D5", "A4", "D5", "F5", "C6", "A6
   var player = new Tone.Player({
     "url" : "assets/audio/metrointro.mp3",
     "loop" : true,
-    'loopStart': '16s',
-    "fadeIn": '5s',
-    "fadeOut": '2s',
+    'loopStart': '8m',
+    "fadeIn": '2s',
+    "fadeOut": '0.5s',
     "volume": -7,
   }).toMaster();
   // player.autostart = true;
@@ -35,8 +35,8 @@ let motifOneB = [null, "A4", null, "A4", "A4", "D5", "A4", "D5", "F5", "C6", "A6
   var player2 = new Tone.Player({
     'url': "assets/audio/metroloop.mp3",
     'loop': 'true',
-    'loopStart': '0.25',
-    'loopEnd': '0.75',
+    'loopStart': '0.15',
+    'loopEnd': '0.65',
     'fadeIn': '0.3s',
     'volume': -7,
   }).toMaster();
@@ -53,11 +53,11 @@ let motifOneB = [null, "A4", null, "A4", "A4", "D5", "A4", "D5", "F5", "C6", "A6
   Tone.Transport.schedule(function() {
     player2.start();
     player.stop();
-  }, '21');
+  }, '12m');
 
   Tone.Transport.schedule(function(time) {
     // congaPart.start('0s');
-    congaPart.start('25');
+    congaPart.start('16m');
   });
 
   /* Tone.Transport.schedule(function(time) {
